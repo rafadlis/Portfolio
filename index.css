@@ -221,7 +221,7 @@ caption {
 
 /* text template */
 .half-highlight {
-    background: linear-gradient(to top, hsl(var(--clr-accent)) 40%, transparent 60%);
+    background: linear-gradient(to top, hsl(var(--clr-accent)) 50%, transparent 50%);
 }
 
 /* ------------------- */
