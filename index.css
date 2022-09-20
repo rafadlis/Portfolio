@@ -89,13 +89,6 @@ body {
     min-height: 100vh;
 }
 
-/* make images easier to work with */
-img,
-picutre {
-    max-width: 100%;
-    display: block;
-}
-
 /* make form elements easier to work with */
 input,
 button,
@@ -264,12 +257,8 @@ caption {
     height: 100vh;
 }
 
-.full-width {
-    width: 100%;
-}
-
 .fill-height {
-    height: 100%;
+    flex-grow: 1;
 }
 
 .column {
@@ -359,4 +348,13 @@ nav {
 #display-pertama {
     width: 750px;
     text-align: center;
+}
+
+
+#foto-profil {
+    width: 30%;
+    background-image: url('images/assets/foto-saya.png');
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
 }
