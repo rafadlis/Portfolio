@@ -10,14 +10,15 @@ class mainNav extends HTMLElement {
                     </div>
                 </a>
                 <div class="flex row gap-4x midle">
-                    <div class="menu"><a href="comingSoon.html">Saiapa Aku?</a></div>
+                    <div class="menu"><a href="comingSoon.html">Portofolio</a></div>
                     <div class="menu"><a href="comingSoon.html">Proyek</a></div>
+                    <div class="menu"><a href="comingSoon.html">Blog</a></div>
                     <div class="menu"><a href="comingSoon.html">Kontak</a></div>
                 </div>
             </div>
             <div id="nav_right_side" class="flex row no-gap midle">
-                <div class="button_lm flex center">EN</div>
-                <div class="button_lm flex center" id="ln_selected">ID</div>
+                <a class="button button_lm flex center">EN</a>
+                <a class="button button_lm flex center" id="ln_selected">ID</a>
             </div>
         </nav>
         `;

@@ -41,7 +41,7 @@
     --default-8x: calc(var(--default) * 8);
 
     /* radius */
-    --box-radius: 4px;
+    --box-rounded: 4px;
 }
 
 /* ------------------- */
@@ -107,6 +107,7 @@ select {
 a {
     color: hsl(var(--clr-primary));
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* general */
@@ -194,6 +195,10 @@ h3 {
     font-family: var(--ff-serif);
 }
 
+*::selection {
+    color: hsl( var(--clr-primary) );
+    background-color: hsl( var(--clr-accent) );
+}
 
 .display {
     font-size: var(--fs-d);
@@ -238,15 +243,17 @@ caption {
 /* buttons */
 .button {
     place-items: center;
-    padding: var(--pd-button);
-    border-radius: 4px;
+    padding: calc(var(--default) / 2);
+    border-radius: var(--box-rounded);
     text-decoration: none;
     border-style: none;
     box-shadow: inset;
+    cursor: pointer;
 }
 
-.inline-border {
-    box-shadow: 0 0 0 1px hsl( var(--clr-primary) );
+.sec-button {
+    box-shadow: 0 0 0 1px hsl( var(--clr-primary) / 0.15);
+    color: hsl(var(--clr-primary) );
 }
 
 /* ------------------- */
@@ -258,7 +265,7 @@ caption {
 }
 
 .full-width {
-    width: 100vw;
+    width: 100%;
 }
 
 .fill-height {
