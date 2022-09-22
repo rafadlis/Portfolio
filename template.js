@@ -10,10 +10,10 @@ class mainNav extends HTMLElement {
                     </div>
                 </a>
                 <div class="flex row gap-4x midle">
-                    <div class="menu"><a href="comingSoon.html">Portofolio</a></div>
-                    <div class="menu"><a href="comingSoon.html">Proyek</a></div>
-                    <div class="menu"><a href="comingSoon.html">Blog</a></div>
-                    <div class="menu"><a href="comingSoon.html">Kontak</a></div>
+                    <div class="menu flex center"><a href="comingSoon.html">Portofolio</a><img src="images/icons/Chevron right.svg" alt=""></div>
+                    <div class="menu flex center"><a href="comingSoon.html">Proyek</a><img src="images/icons/Chevron right.svg" alt=""></div>
+                    <div class="menu flex center"><a href="comingSoon.html">Blog</a></div>
+                    <div class="menu flex center"><a href="comingSoon.html">Kontak</a></div>
                 </div>
             </div>
             <div id="nav_right_side" class="flex row no-gap midle">
