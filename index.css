@@ -224,6 +224,10 @@ caption {
     font-weight: var(--fw-400);
 }
 
+.no-break {
+    white-space: nowrap !important;
+}
+
 /* text template */
 .half-highlight {
     background: linear-gradient(to top, hsl(var(--clr-accent)) 40%, transparent 50%);
@@ -247,6 +251,14 @@ caption {
 .sec-button {
     box-shadow: 0 0 0 1px hsl( var(--clr-primary) / 0.15);
     color: hsl(var(--clr-primary) );
+}
+
+/* glass effect */
+.white-glass {
+    background: hsl( var(--clr-white) / 0.3 );
+    border: 1px solid hsl( var(--clr-primary) / 0.05);
+    backdrop-filter: blur(6px);
+    border-radius: 4px;
 }
 
 /* ------------------- */
@@ -282,6 +294,15 @@ caption {
 
 .auto-gap { 
     justify-content: space-between;
+}
+
+.same-padding {
+    padding: var(--default-2x);
+}
+
+.fit {
+    width: fit-content;
+    height: fit-content;
 }
 
 .gap-1x { gap: calc(var(--default) * 1);}
@@ -352,9 +373,64 @@ nav {
 
 
 #foto-profil {
-    width: 30%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 0.8 / 1;
     background-image: url('images/assets/foto-saya.png');
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
+}
+
+.gradient-line {
+    position: absolute;
+    height: 2.4px;
+    background-image: linear-gradient(to right, hsl(var(--clr-accent2) / 0), hsl(var(--clr-accent2)), hsl(var(--clr-accent2) / 0));
+    width: 100%;
+    bottom: 0;
+}
+
+
+#fp-box {
+    position: absolute;
+    left: 78%;
+    top: 45%;
+    width:auto;
+}
+
+#fp-box > p {
+    width: auto;
+}
+
+#fp-box2 {
+    position: absolute;
+    right: 75%;
+    bottom: 35%;
+    width: auto;
+}
+
+#fp-box2 > p {
+    width: auto;
+}
+
+.fp-ball {
+    position: absolute;
+    width: var(--default-8x);
+    height: var(--default-8x);
+    background-color: hsl( var(--clr-accent2) );
+    border-radius: 100%;
+    z-index: -1;
+}
+
+#fp-ball1 {
+    position: absolute;
+    left: calc(78% - 16px);
+    top: calc(45% - 32px);
+}
+
+#fp-ball2 {
+    position: absolute;
+    right: calc(75% - 8px);
+    bottom: calc(35% - 32px);
 }
